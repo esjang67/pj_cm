@@ -7,12 +7,20 @@ import Museum from "./page/Museum";
 import Mark from "./page/Mark";
 import Review from "./page/Review";
 import Member from "./page/Member";
-import Header from "./component/Header";
+// import Header from "./component/Header";
+import Mdata from "./data/Mdata";
+import { useEffect } from "react";
 
 function App() {
+
+  useEffect(()=>{
+    <Mdata />
+    
+  },[])
+
   return (
     <div className="App">
-      <Header />
+      {/* <Header /> */}
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/area" element={<Area />} />

@@ -1,10 +1,10 @@
-import Banner from "../component/Banner";
+// import Banner from "../component/Banner";
 
 function Main() {
   return (
     <div>
       Main
-      <Banner />
+      {/* <Banner /> */}
     </div>
     
     )
