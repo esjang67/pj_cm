@@ -6,3 +6,9 @@
   background: white;
   font-size: 25px;
 }
+
+.area_btn {
+  font-size: 15px;
+  width: auto;
+  margin-right: 10px;
+}

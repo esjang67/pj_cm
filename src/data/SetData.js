@@ -42,7 +42,6 @@ function SetData(data) {
     
   })
   dispatch(setMuseum(tmp));
-  dispatch(setMuseumInfo(tmpInfo));
   
   return;
 }

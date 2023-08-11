@@ -1,0 +1,21 @@
+.MuseumItem {
+  width: 200px;
+  height: 150px;
+  border: 1px solid red
+}
+.MuseumItem .museumLogo {
+  width: 180px;
+  height: 100px;
+  text-align: center;
+}
+.MuseumItem .museumLogo img {
+  font-size: 12px;
+  margin: 10px;
+  border: 1px solid red;
+  width:80%
+}
+
+.MuseumItem .name p {
+  font-size: 16px;
+  font-weight: bold;
+}

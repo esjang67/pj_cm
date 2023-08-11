@@ -1,6 +1,5 @@
 import { useDispatch } from 'react-redux';
 import { setMuseum } from '../redux/MuseumSlice';
-import { setMuseumInfo } from '../redux/MuseumInfoSlice';
 import { useEffect } from 'react';
 // import { useCallback } from 'react';
 
@@ -45,7 +44,6 @@ function useSetData(data) {
       
     })
     dispatch(setMuseum(tmp));
-    dispatch(setMuseumInfo(tmpInfo));
 
   })
  
