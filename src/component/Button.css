@@ -1,14 +1,17 @@
 .Button {
-  border: 1px, solid, blue;
   width: 100px;
   height: 50px;
   border-radius: 5px;
-  background: white;
+  background: blue;
   font-size: 25px;
+  color: white;
+  border: none;
+  border: 1px solid blue;
 }
 
-.area_btn {
-  font-size: 15px;
+.btn_area {
+  height: 30px;
+  font-size: 13px;
   width: auto;
   margin-right: 10px;
 }

@@ -1,0 +1,79 @@
+.Join {
+  margin: auto;
+}
+
+.Join input {
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+
+.Join .input_confirm_btn {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  background-color: royalblue;
+  color: white;
+  border: none;
+  border: 1px solid blue;
+}
+.Join .input_confirm_btn:active {
+  position: relative;
+  left: 2px;
+  top: 2px;
+}
+
+.Join .id_input_box {
+  position: relative;
+}
+
+.Join .id_input_check {
+  position: absolute;
+  top: 52px;
+  right: 200px;
+}
+.Join .pw_input_box {
+  position: relative;
+}
+.Join .pw_input_check {
+  position: absolute;
+  top: 52px;
+  right: 200px;
+}
+.Join .email_input_box {
+  position: relative;
+}
+.Join .email_input_check {
+  position: absolute;
+  top: 52px;
+  right: 200px;
+}
+.Join .phone_input_box {
+  position: relative;
+}
+.Join .phone_input_check {
+  position: absolute;
+  top: 52px;
+  right: 200px;
+}
+
+.Join .reg_req_btn {
+  margin-top: 30px;
+  font-size: 1.2em;
+  width: 404px;
+  height: 50px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  background-color: darkgray;
+  color: white;
+  border: none;
+  border: 1px solid darkgray;
+}
+
+.Join .btnClickEvent:active {
+  position: relative;
+  top: 2px;
+  left: 2px;
+}

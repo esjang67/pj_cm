@@ -1,3 +1,6 @@
-.Header > #basic-navbar-nav {
-  border:1px solid red;
+.Header {
+  /* padding: 20px 0; */
+  display: flex;
+  /* align-items: center; */
+  /* border-bottom: 1px solid #e2e2e2; */
 }

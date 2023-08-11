@@ -2,11 +2,9 @@ import { useState } from "react";
 import AreaList from "../component/AreaList";
 import MuseumGrid from "../component/MuseumGrid";
 
-
 function Area() {
-
-  const [area, setArea] = useState('All')
-  console.log('area', area)
+  const [area, setArea] = useState("All");
+  // console.log('area', area)
   return (
     <div className="Area">
       <div className="local">
@@ -16,7 +14,7 @@ function Area() {
         <MuseumGrid areaName={area} />
       </div>
     </div>
-    )
+  );
 }
 
 export default Area;
