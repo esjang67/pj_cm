@@ -14,6 +14,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setMuseum } from "./redux/MuseumSlice";
 import Header from "./component/Header";
 import Join from "./component/Join";
+import Login from "./component/Login";
 
 const key = "00BB282F-DCAE-3E24-A85A-6FA4A7221CDF";
 const domain = "localhost:3000";
@@ -83,8 +84,8 @@ function App() {
         <Route path="/museum/:id" element={<Museum />} />
         <Route path="/mark" element={<Mark />} />
         <Route path="/review" element={<Review />} />
+        <Route path="/member/login" element={<Login />} />
         <Route path="/member/join" element={<Join />} />
-        <Route path="/member/login" element={<Join />} />
       </Routes>
     </div>
   );
