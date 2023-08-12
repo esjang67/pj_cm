@@ -53,6 +53,7 @@ function App() {
             mus_typ: Mdata.properties.mus_typ,
             logo_src: "../img/국립중앙박물관.jpg",
             new_adr: Mdata.properties.new_adr,
+            area_adr: String(Mdata.properties.new_adr).split(" ")[0], // 지역따로 저장
             opr_tel: Mdata.properties.opr_tel,
             // 평일
             wds_tme: Mdata.properties.wds_tme,

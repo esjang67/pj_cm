@@ -8,10 +8,6 @@ import MuseumItem from "./MuseumItem";
 function MuseumGrid({ areaName }) {
   const { museum } = useSelector((state) => state);
 
-  // const [searchArea, setSerchArea] = useState([]);
-
-  // console.log('MuseumGrid', areaName)
-
   if (areaName === "All") {
     return (
       <div className="MuseumGrid">
@@ -24,12 +20,7 @@ function MuseumGrid({ areaName }) {
       </div>
     );
   } else {
-    // 박물관 주소 첫번째단어(지역명)이 areaName와 같은 박물관만
-    const aaaaa = museum.filter(
-      (data) => String(data.new_adr).split(" ")[0] === areaName
-    );
-    // setSerchArea(museum.filter((data) => String(data.new_adr).split(' ')[0] === areaName))
-    // console.log(aaaaa);
+    const aaaaa = museum.filter((data) => data.area_adr === areaName);
 
     return (
       <div className="MuseumGrid">

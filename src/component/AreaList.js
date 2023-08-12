@@ -8,9 +8,9 @@ function AreaList({ setArea }) {
   const _local = [];
 
   museum.forEach((Mdata) => {
-    let adrpart = String(Mdata.new_adr).split(" ")[0];
-    if (!_local.includes(adrpart)) {
-      _local.push(adrpart);
+    // let adrpart = String(Mdata.new_adr).split(" ")[0];
+    if (!_local.includes(Mdata.area_adr)) {
+      _local.push(Mdata.area_adr);
     }
   });
 

@@ -14,7 +14,7 @@ function Header() {
           <Nav className="me-auto">
             <NavDropdown title="박물관" id="basic-nav-dropdown">
               <NavDropdown.Item href="/area">지역별</NavDropdown.Item>
-              <NavDropdown.Item href="/subject">주제별</NavDropdown.Item>
+              {/* <NavDropdown.Item href="/subject">주제별</NavDropdown.Item> */}
             </NavDropdown>
             <Nav.Link href="/mark">북마크</Nav.Link>
             <Nav.Link href="/review">후기</Nav.Link>
