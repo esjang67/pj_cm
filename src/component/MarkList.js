@@ -8,10 +8,6 @@ function MarkList() {
   const [mList, setMList] = useState(data);
   const navigate = useNavigate();
 
-  if (!data) {
-    return <div>저장된 북마크가 없습니다.</div>;
-  }
-
   // 삭제(로컬스토리지에서 삭제하기)
   const onDeleteHandler = () => {
     const getID = document.querySelector(".m_id").innerHTML;
@@ -34,8 +30,8 @@ function MarkList() {
     const Mdata = _museum.find((m) => String(m.id) === String(mark));
 
     return (
-      <tr key={Mdata.id} onClick={onRowHandler}>
-        <td className="m_id">{Mdata.id}</td>
+      <tr key={Mdata.id} data-id={Mdata.id} onClick={onRowHandler}>
+        <td className="m_id" hidden>{Mdata.id}</td>
         <td>{Mdata.area_adr}</td>
         <td>{Mdata.mus_nam}</td>
         <td>

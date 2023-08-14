@@ -341,6 +341,7 @@ function Join() {
                   id="id_txt"
                   type="text"
                   placeholder="아이디를 입력하세요."
+                  autocomplete='off'
                   onChange={onIdHandler}
                 />
               </td>

@@ -6,7 +6,6 @@ import Subject from "./page/Subject";
 import Museum from "./page/Museum";
 import Mark from "./page/Mark";
 import Review from "./page/Review";
-import Member from "./page/Member";
 import { useEffect } from "react";
 import axios from "axios";
 import axiosJsonp from "axios-jsonp";
@@ -15,6 +14,8 @@ import { setMuseum } from "./redux/MuseumSlice";
 import Header from "./component/Header";
 import Join from "./component/Join";
 import Login from "./component/Login";
+import ReviewDetail from "./page/ReviewDetail";
+import ComboMuseum from "./component/ComboMuseum";
 
 const key = "00BB282F-DCAE-3E24-A85A-6FA4A7221CDF";
 const domain = "localhost:3000";
@@ -43,7 +44,7 @@ function App() {
       .then((response) => {
         const data = response.data;
         result = data.response.result.featureCollection.features;
-        console.log("result", result);
+        // console.log("result", result);
       })
       .then(() => {
         result.forEach((Mdata) => {
@@ -69,7 +70,7 @@ function App() {
             yot_fee: Mdata.properties.yot_fee,
           });
         });
-        console.log("tmp", tmp);
+        // console.log("tmp", tmp);
         dispatch(setMuseum(tmp));
       })
       .catch((err) => alert(err));
@@ -78,6 +79,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      {/* <ComboMuseum selId={'1200'}/> */}
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/area" element={<Area />} />
@@ -85,6 +87,7 @@ function App() {
         <Route path="/museum/:id" element={<Museum />} />
         <Route path="/mark" element={<Mark />} />
         <Route path="/review" element={<Review />} />
+        <Route path="/review/:id" element={<ReviewDetail />} />
         <Route path="/member/login" element={<Login />} />
         <Route path="/member/join" element={<Join />} />
       </Routes>
