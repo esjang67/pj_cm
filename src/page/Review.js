@@ -3,39 +3,48 @@ import ReviewList from "../component/ReviewList";
 import { useNavigate } from "react-router-dom";
 
 function Review() {
-  const data = JSON.parse(localStorage.getItem('Pg_CM_Rv'));
+  const data = JSON.parse(localStorage.getItem("Pg_CM_Rv"));
   const [rList, setRList] = useState(data);
   const navigate = useNavigate();
 
   function reviewNewHandler() {
-    navigate('/review/new')
+    navigate("/review/new");
+  }
+
+  if (!data) {
+    return (
+      <div className="Review">
+        <div>
+          user 님의 후기
+          <button onClick={reviewNewHandler}>글쓰기</button>
+        </div>
+        <div>저장된 북마크가 없습니다.</div>
+      </div>
+    );
   }
 
   return (
     <div className="Review">
-
       <div>
         user 님의 후기
         <button onClick={reviewNewHandler}>글쓰기</button>
       </div>
       <div className="reviewList">
-      {
-        (!data) ? 
+        {/* {!data ? (
           <div className="Review">저장후기 없음</div>
-        :
-          <table>
-            <tr>
-              <th>방문일자</th>
-              {/* <th hidden>박물관id</th> */}
-              <th>박물관</th>
-            </tr>
-            <ReviewList rList={rList} setRList={setRList} />
-          </table>
-        
-      }
+        ) : ( */}
+        <table>
+          <tr>
+            <th>방문일자</th>
+            {/* <th hidden>박물관id</th> */}
+            <th>박물관</th>
+          </tr>
+          <ReviewList rList={rList} />
+        </table>
+        {/* )} */}
       </div>
     </div>
-    )
+  );
 }
 
 export default Review;

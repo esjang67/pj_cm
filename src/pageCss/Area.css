@@ -1,0 +1,20 @@
+.Area {
+}
+.Area .local {
+  margin: 10px;
+}
+.Area .container {
+  margin-top: 10px;
+}
+.AreaList .area {
+  /* border: 1px solid red; */
+  /* text-align: center; */
+}
+.AreaList .area .areaBtn {
+}
+.MuseumGrid {
+  border-top: 1px solid blue;
+}
+.MuseumGrid h3 {
+  margin-top: 10px;
+}

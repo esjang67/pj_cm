@@ -1,4 +1,10 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
   height: 3000px;
+}
+
+body {
+  width: 1200px;
+  border: 1px solid red;
+  margin: auto;
 }

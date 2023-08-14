@@ -15,7 +15,7 @@ import Header from "./component/Header";
 import Join from "./component/Join";
 import Login from "./component/Login";
 import ReviewDetail from "./page/ReviewDetail";
-import ComboMuseum from "./component/ComboMuseum";
+// import ComboMuseum from "./component/ComboMuseum";
 
 const key = "00BB282F-DCAE-3E24-A85A-6FA4A7221CDF";
 const domain = "localhost:3000";
@@ -34,7 +34,7 @@ function App() {
   const dispatch = useDispatch();
   const { museum } = useSelector((state) => state);
 
-  // console.log('m', museum);
+  // console.log("m", museum);
 
   useEffect(() => {
     axios({

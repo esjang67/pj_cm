@@ -1,8 +1,10 @@
+import "./Login.css";
+
 function Login() {
   return (
     <div className="Login">
-      Login
-      <div>
+      <h4>Login</h4>
+      <div className="login_in">
         <form>
           <div>
             <label for="id_txt">아이디</label>
@@ -16,11 +18,10 @@ function Login() {
               placeholder="비밀번호를 입력하세요."
             />
           </div>
-          <div>
+          <div className="login_btn">
             <button className="btn_cancel">취소</button>
-            <button className="btn_login" disabled>
-              로그인
-            </button>
+            {/* <button className="btn_login" disabled> */}
+            <button className="btn_login">로그인</button>
           </div>
         </form>
       </div>

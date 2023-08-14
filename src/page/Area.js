@@ -1,6 +1,7 @@
 import { useState } from "react";
 import AreaList from "../component/AreaList";
 import MuseumGrid from "../component/MuseumGrid";
+import "../pageCss/Area.css";
 
 function Area() {
   const [area, setArea] = useState("All");

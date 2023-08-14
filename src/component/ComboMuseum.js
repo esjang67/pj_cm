@@ -1,33 +1,38 @@
-import { useSelector } from "react-redux"
+import { useSelector } from "react-redux";
 
 function ComboMuseum({ selId, onSubmit }) {
   // 콤보박스에서 자동조회 만들것!
   // console.log('ComboMuseum', selId)
   // 박물관 리스트
-  const { museum } = useSelector(state => state);
+  const { museum } = useSelector((state) => state);
   // 우선 전체 리스트 출력하기. id, name 출력
-  const comboMuseumAll=[];
-  museum.forEach(element => {
-    comboMuseumAll.push(`${element.id}:${element.mus_nam}`)
+  const comboMuseumAll = [];
+  museum.forEach((element) => {
+    comboMuseumAll.push(`${element.id}:${element.mus_nam}`);
   });
 
-  return(
+  return (
     <div className="ComboMuseum">
-      <select onChange={onSubmit} >
-        {
-          comboMuseumAll.map((Mdata) => {
-            const cData = Mdata.split(":")
-            return (
-              <option key={cData[0]} data-id={cData[0]} selected={(String(cData[0]) === String(selId)) ? "selected": ''} value={cData[1]}>{cData[1]}</option>      
-            )
-          })
-        }
+      <select onChange={onSubmit} defaultValue={0} value={0}>
+        {comboMuseumAll.map((Mdata) => {
+          const cData = Mdata.split(":");
+          return (
+            <option
+              key={cData[0]}
+              data-id={cData[0]}
+              selected={String(cData[0]) === String(selId) ? "selected" : ""}
+              value={cData[0]}
+            >
+              {cData[1]}
+            </option>
+          );
+        })}
       </select>
     </div>
-  )
+  );
 }
 
-export default ComboMuseum
+export default ComboMuseum;
 
 // 자동조회 참고
 // const ComboMuseum = () => {

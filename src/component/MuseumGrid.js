@@ -7,7 +7,20 @@ import MuseumItem from "./MuseumItem";
 
 function MuseumGrid({ areaName }) {
   const { museum } = useSelector((state) => state);
+  if (areaName === "Top") {
+    const top = museum.slice(0, 10);
 
+    return (
+      <div className="MuseumGrid">
+        <div className="list">
+          {top.map((Mdata) => {
+            return <MuseumItem key={Mdata.id} data={Mdata} />;
+          })}
+        </div>
+      </div>
+    );
+  }
+  //--------------------------
   if (areaName === "All") {
     return (
       <div className="MuseumGrid">

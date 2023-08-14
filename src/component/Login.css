@@ -1,0 +1,27 @@
+.Login {
+  margin: auto;
+  margin-top: 30px;
+  width: 400px;
+}
+
+.Login > h4 {
+  text-align: center;
+  /* padding-bottom: 20px; */
+}
+
+.Login .login_in form {
+  padding: 20px;
+}
+.Login .login_in div {
+  margin: 10px;
+}
+.Login .login_in div > label {
+  width: 80px;
+}
+.Login .login_in .login_btn {
+  text-align: center;
+}
+
+.Login .login_in .login_btn > button {
+  margin: 10px;
+}
