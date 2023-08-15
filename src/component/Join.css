@@ -1,82 +1,79 @@
 .Join {
   margin: auto;
-  width: 400px;
+  width: 600px;
 }
 .Join .join-container {
-  border: 1px solid red;
+  background: #fff;
+  border-radius: 5px;
+  margin: 1rem;
+  position: relative;
+  padding: 40px;
+  width: 100%;
+  border-top: 5px solid #5942c1;
+  box-shadow: 0 0px 70px rgba(0, 0, 0, 0.1);
 }
-.Join input {
-  width: 200px;
-  height: 30px;
-  border-radius: 10px;
-  padding-left: 20px;
+.Join .join-container h4 {
+  color: #5942c1;
+}
+.Join .join-container textarea {
+  width: 100%;
+  min-height: 200px;
+  resize: vertical;
+  resize: none;
+}
+.Join .join-container form {
+  margin-top: 40px;
 }
 
-.Join .input_confirm_btn {
+.Join .join-container .agree-check {
+  /* border: 1px solid red; */
+  text-align: right;
+}
+
+.Join .input-area {
+  /* border: 1px solid blue; */
+  margin: auto;
+  width: 300px;
+  text-align: center;
+}
+
+.Join .input-btn {
+  margin: 10px;
+}
+.Join .input-area input {
+  width: 80%;
+  margin-top: 20px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  padding-left: 0;
+  box-shadow: none;
+  outline: none;
+}
+.Join .input-area input:hover {
+  border-bottom: 1px solid blue;
+}
+
+.Join .input-area input:focus {
+  /* border: none; */
+  border-bottom: 1px solid blue;
+}
+
+.Join .input-area span {
+  color: red;
+}
+
+.Join .input-btn .btn_join {
+  display: inline-block;
   width: 100px;
   height: 50px;
-  border-radius: 10px;
-  margin-bottom: 24px;
-  background-color: royalblue;
-  color: white;
-  border: none;
-  border: 1px solid blue;
-}
-.Join .input_confirm_btn:active {
-  position: relative;
-  left: 2px;
-  top: 2px;
-}
-
-.Join .id_input_box {
-  position: relative;
-}
-
-.Join .id_input_check {
-  position: absolute;
-  top: 52px;
-  right: 200px;
-}
-.Join .pw_input_box {
-  position: relative;
-}
-.Join .pw_input_check {
-  position: absolute;
-  top: 52px;
-  right: 200px;
-}
-.Join .email_input_box {
-  position: relative;
-}
-.Join .email_input_check {
-  position: absolute;
-  top: 52px;
-  right: 200px;
-}
-.Join .phone_input_box {
-  position: relative;
-}
-.Join .phone_input_check {
-  position: absolute;
-  top: 52px;
-  right: 200px;
-}
-
-.Join .reg_req_btn {
   margin-top: 30px;
-  font-size: 1.2em;
-  width: 404px;
-  height: 50px;
-  border-radius: 10px;
-  margin-bottom: 24px;
-  background-color: darkgray;
-  color: white;
-  border: none;
-  border: 1px solid darkgray;
-}
-
-.Join .btnClickEvent:active {
-  position: relative;
-  top: 2px;
-  left: 2px;
+  border: 2px solid #5942c1;
+  background: #5942c1;
+  border-radius: 25px;
+  padding: 3px 12px 5px 12px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0px;
 }

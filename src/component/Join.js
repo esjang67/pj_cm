@@ -1,6 +1,5 @@
-import { useState } from "react";
-
 import "./Join.css";
+import { useState } from "react";
 
 const regexId = /^\w{8,20}$/;
 const regexPw =
@@ -11,8 +10,6 @@ function Join() {
   // const chk_id = document.querySelector(".value");
   const [chkId, setChkId] = useState("");
   const [chkPw, setChkPw] = useState("");
-  const [chkPw2, setChkPw2] = useState("");
-  // const [chkTel, setChkTel] = useState("");
 
   // 체크함수()
   const onIdHandler = (e) => {
@@ -23,30 +20,13 @@ function Join() {
     if (regexPw.test(e.target.value)) setChkPw("V");
   };
 
-  const onPw2Handler = (e) => {
-    const pwvalue = document.querySelector("#pw_txt");
-    if (pwvalue === e.target.value) chkPw2("V");
-    else {
-      alert("위의 비밀번호와 다릅니다.");
-      pwvalue.innerHTML = "";
-      setChkPw2("");
-    }
-  };
-
-  // const onTelHandler = (e) => {
-  //   if (regexTel.test(e.target.value)) setChkTel("V");
-  // };
-
   return (
     <div className="Join">
       <div className="join-container">
-        <div className="main_title">
-          <h4>회원 가입</h4>
-        </div>
-
+        <h4>Join Us</h4>
         <form>
           <div>
-            <p>이용약관</p>
+            <h5>이용약관</h5>
             <textarea readonly>
               제1조(목적) 이 약관은 업체 회사(전자상거래 사업자)가 운영하는 업체
               사이버 몰(이하 “몰”이라 한다)에서 제공하는 인터넷 관련 서비스(이하
@@ -325,97 +305,42 @@ function Join() {
               간에 제기된 전자상거래 소송에는 한국법을 적용합니다.
             </textarea>
           </div>
-          <div className="fregister">
-            <input type="checkbox" name="agree" value="1" id="agree11" />
-            <label for="agree11">
+          <div className="agree-check">
+            <input type="checkbox" name="agree" value="" id="check" />
+            <label for="check">
               이용약관 동의<span>(필수)</span>
             </label>
           </div>
-          {/* <hr /> */}
-          <table>
-            <tr>
-              <td>
-                <label for="id_txt">아이디</label>
-              </td>
-              <td>
-                <input
-                  id="id_txt"
-                  type="text"
-                  placeholder="아이디를 입력하세요."
-                  autocomplete="off"
-                  onChange={onIdHandler}
-                />
-              </td>
-              <td>
-                <p className="check_id">{chkId}</p>
-              </td>
-            </tr>
-
-            <tr>
-              <td>
-                <label for="pw_txt">비밀번호</label>
-              </td>
-              <td>
-                <input
-                  id="pw_txt"
-                  type="passoword"
-                  placeholder="비밀번호를 입력하세요."
-                  onChange={onPwHandler}
-                />
-              </td>
-              <td>
-                <p className="input_check">{chkPw}</p>
-              </td>
-            </tr>
-
-            <tr>
-              <td>
-                <label for="id_txt">비밀번호확인</label>
-              </td>
-              <td>
-                <input
-                  id="id_txt"
-                  type="passoword"
-                  placeholder="비밀번호를 다시 입력하세요."
-                  onChange={onPw2Handler}
-                />
-              </td>
-              <td>
-                <p className="input_check">{chkPw2}</p>
-              </td>
-            </tr>
-
-            <tr>
-              <td>
-                <label for="id_txt">이름</label>
-              </td>
-              <td>
-                <input
-                  id="id_txt"
-                  type="text"
-                  placeholder="이름을 입력하세요."
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <label for="id_txt">전화번호</label>
-              </td>
-              <td>
-                <input
-                  id="id_txt"
-                  type="text"
-                  placeholder="전화번호를 입력하세요."
-                  // onChange={onTelHandler}
-                />
-              </td>
-            </tr>
-          </table>
-
-          <button className="btn_cancel">취소</button>
-          <button className="btn_join" disabled>
-            가입
-          </button>
+          <hr />
+          <div className="input-area">
+            <div className="input-box">
+              <input
+                id="id_txt"
+                type="text"
+                placeholder="ID"
+                autocomplete="off"
+                required
+                onChange={onIdHandler}
+              />
+              <span>{chkId}</span>
+              <br />
+              <input
+                id="pw_txt"
+                type="password"
+                placeholder="Password"
+                required
+                onChange={onPwHandler}
+              />
+              <span>{chkPw}</span>
+              <br />
+              <input id="name_txt" type="text" placeholder="Name" required />
+              <br />
+              <input id="phone_txt" type="text" placeholder="Phone" />
+            </div>
+            <div className="input-btn">
+              <button className="btn_join">Join</button>
+            </div>
+          </div>
         </form>
       </div>
     </div>
