@@ -1,9 +1,11 @@
 .App {
   /* text-align: center; */
   height: 3000px;
+  /* background-image: linear-gradient(to bottom right, #76abdf, #ffffff); */
 }
 
 body {
+  padding-top: 70px;
   width: 1200px;
   border: 1px solid red;
   margin: auto;

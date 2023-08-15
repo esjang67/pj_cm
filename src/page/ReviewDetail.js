@@ -115,7 +115,7 @@ function ReviewDetail() {
     }
   }
 
-  // console.log('ReviewDetail write', write.museum)
+  // console.log("ReviewDetail write", write.museum);
 
   return (
     <div className="ReviewDetail">

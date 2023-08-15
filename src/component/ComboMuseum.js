@@ -13,7 +13,7 @@ function ComboMuseum({ selId, onSubmit }) {
 
   return (
     <div className="ComboMuseum">
-      <select onChange={onSubmit} defaultValue={0} value={0}>
+      <select onChange={onSubmit} defaultValue={0}>
         {comboMuseumAll.map((Mdata) => {
           const cData = Mdata.split(":");
           return (

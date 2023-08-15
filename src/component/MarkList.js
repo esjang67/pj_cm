@@ -31,10 +31,12 @@ function MarkList() {
 
     return (
       <tr key={Mdata.id} data-id={Mdata.id} onClick={onRowHandler}>
-        <td className="m_id" hidden>{Mdata.id}</td>
-        <td>{Mdata.area_adr}</td>
-        <td>{Mdata.mus_nam}</td>
-        <td>
+        <td className="m_id" data-th="ID" hidden>
+          {Mdata.id}
+        </td>
+        <td data-th="지역">{Mdata.area_adr}</td>
+        <td data-th="박물관">{Mdata.mus_nam}</td>
+        <td className="btn_del">
           <button onClick={onDeleteHandler}>삭제</button>
         </td>
       </tr>

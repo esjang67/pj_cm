@@ -1,6 +1,16 @@
 .Header {
-  /* padding: 20px 0; */
-  display: flex;
-  /* align-items: center; */
-  /* border-bottom: 1px solid #e2e2e2; */
+  width: 1200px;
+  background: rgb(6, 0, 106);
+  background: linear-gradient(
+    90deg,
+    rgba(6, 0, 106, 0.8869922969187675) 0%,
+    rgba(9, 9, 121, 0.8337710084033614) 43%,
+    rgba(0, 212, 255, 0.5592612044817927) 100%
+  );
+  color: white;
+  font-weight: bold;
+
+  position: fixed;
+  justify-content: space-between;
+  top: 0;
 }

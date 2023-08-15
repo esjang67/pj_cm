@@ -6,22 +6,62 @@
 
 .Login > h4 {
   text-align: center;
-  /* padding-bottom: 20px; */
 }
 
-.Login .login_in form {
-  padding: 20px;
-}
-.Login .login_in div {
-  margin: 10px;
-}
-.Login .login_in div > label {
-  width: 80px;
-}
-.Login .login_in .login_btn {
-  text-align: center;
+.Login .login-content {
+  width: 420px;
+  padding: 40px;
+  height: 500px;
+  box-shadow: 0 0px 70px rgba(0, 0, 0, 0.1);
+  border-top: 5px solid #5942c1;
 }
 
-.Login .login_in .login_btn > button {
-  margin: 10px;
+.Login .login-content h4 {
+  color: #5942c1;
+}
+.Login input {
+  margin-top: 20px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  padding-left: 0;
+  box-shadow: none;
+}
+
+.Login input:focus:invalid {
+  border-bottom: 1px solid red;
+}
+.Login .form-btn {
+  text-align: right;
+}
+.Login button {
+  display: inline-block;
+  width: 100px;
+  margin-top: 50px;
+  border: 2px solid #5942c1;
+  background: #5942c1;
+  border-radius: 25px;
+  padding: 3px 12px 5px 12px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  /* -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out; */
+}
+.Login button:hover {
+  color: #5942c1;
+  background: #fff;
+  /* border: 2px solid #5942c1; */
+}
+.Login button:active {
+  box-shadow: none;
+}
+.Login .login-content-signin > div,
+.login-content-signup > div {
+  overflow: hidden;
+  top: 50%;
+  position: relative;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }

@@ -1,0 +1,77 @@
+/* @import "https://fonts.googleapis.com/css?family=Open+Sans:600,700";
+
+* {
+  font-family: "Open Sans", sans-serif;
+} */
+.Mark {
+  margin: auto;
+  margin-top: 30px;
+  width: 800px;
+}
+
+.Mark > h4 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.Mark .markList {
+  width: 100%;
+}
+
+.Mark .markList .rwd-table {
+  /* background: white; */
+  border-radius: 10px;
+  border-collapse: collapse;
+  height: 200px;
+  margin: auto;
+  max-width: 600px;
+  padding: 5px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  animation: float 5s infinite;
+}
+
+.Mark .markList .rwd-table th {
+  color: #fff;
+  background: #428bca;
+  border-top: none;
+  /* border-bottom: 4px solid #9ea7af; */
+  border-right: 1px solid #343a45;
+  font-size: 23px;
+  font-weight: 300;
+  padding: 20px;
+  text-align: center;
+  /* text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); */
+  vertical-align: middle;
+}
+
+.Mark .markList .rwd-table tr {
+  border-top: 1px solid #c1c3d1;
+  border-bottom: 1px solid #c1c3d1;
+  color: #666b85;
+  font-size: 18px;
+  font-weight: normal;
+  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+
+.Mark .markList .rwd-table tr:hover td {
+  background: #94c4da2f;
+}
+
+.Mark .markList .rwd-table td {
+  background: #ffffff;
+  padding: 20px;
+  text-align: left;
+  vertical-align: middle;
+  /* font-weight: 300;
+  font-size: 18px; */
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #c1c3d1;
+}
+.Mark .markList .rwd-table .btn_del {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.Mark .markList .rwd-table td:last-child {
+  border-right: 0px;
+}

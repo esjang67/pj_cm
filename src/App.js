@@ -78,7 +78,9 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <div>
+        <Header />
+      </div>
       {/* <ComboMuseum selId={'1200'}/> */}
       <Routes>
         <Route path="/" element={<Main />} />

@@ -1,6 +1,7 @@
 import { useState } from "react";
 
-// import "./Join.css";
+import "./Join.css";
+
 const regexId = /^\w{8,20}$/;
 const regexPw =
   /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,20}$/;
@@ -38,9 +39,9 @@ function Join() {
 
   return (
     <div className="Join">
-      <div className="container">
+      <div className="join-container">
         <div className="main_title">
-          <h3>회원 가입</h3>
+          <h4>회원 가입</h4>
         </div>
 
         <form>
@@ -330,7 +331,7 @@ function Join() {
               이용약관 동의<span>(필수)</span>
             </label>
           </div>
-          <hr />
+          {/* <hr /> */}
           <table>
             <tr>
               <td>
@@ -341,7 +342,7 @@ function Join() {
                   id="id_txt"
                   type="text"
                   placeholder="아이디를 입력하세요."
-                  autocomplete='off'
+                  autocomplete="off"
                   onChange={onIdHandler}
                 />
               </td>

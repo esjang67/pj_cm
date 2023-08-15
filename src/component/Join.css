@@ -1,7 +1,10 @@
 .Join {
   margin: auto;
+  width: 400px;
 }
-
+.Join .join-container {
+  border: 1px solid red;
+}
 .Join input {
   width: 200px;
   height: 30px;

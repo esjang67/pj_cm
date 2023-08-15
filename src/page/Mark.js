@@ -1,7 +1,6 @@
 import MarkList from "../component/MarkList";
-
+import "../pageCss/Mark.css";
 function Mark() {
-
   const data = JSON.parse(localStorage.getItem("Pg_CM"));
 
   if (!data) {
@@ -10,15 +9,22 @@ function Mark() {
 
   return (
     <div className="Mark">
-      <table>
-        <tr>
-          <th hidden>ID(나중에 안보이게 변경)</th>
-          <th>지역</th>
-          <th>박물관</th>
-          <th>삭제</th>
-        </tr>
-        <MarkList />
-      </table>
+      <h4>북마크</h4>
+      <div className="markList">
+        <table className="rwd-table">
+          <thead>
+            <tr>
+              <th hidden>ID</th>
+              <th>지역</th>
+              <th>박물관</th>
+              <th>삭제</th>
+            </tr>
+          </thead>
+          <tbody class="table-hover">
+            <MarkList />
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }
