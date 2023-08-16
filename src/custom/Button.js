@@ -1,4 +1,3 @@
-// import { styled } from "styled-components";
 import "./Button.css";
 
 export default function Button({ title, icon, onClickHandler }) {
