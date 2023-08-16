@@ -13,11 +13,11 @@
   padding: 40px;
   height: 500px;
   box-shadow: 0 0px 70px rgba(0, 0, 0, 0.1);
-  border-top: 5px solid #1A237e;
+  border-top: 5px solid #1a237e;
 }
 
 .Login .login-content h4 {
-  color: #1A237e;
+  color: #1a237e;
 }
 .Login input {
   margin-top: 20px;
@@ -29,9 +29,9 @@
   outline: none;
 }
 
-.Login input:focus:invalid {
+/* .Login input:focus:invalid {
   border-bottom: 1px solid red;
-}
+} */
 .Login .form-btn {
   text-align: right;
 }

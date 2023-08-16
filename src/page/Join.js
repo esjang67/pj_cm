@@ -1,5 +1,5 @@
 import Button from "../custom/Button";
-import "./Join.css";
+import "../pageCss/Join.css";
 import { useState } from "react";
 
 const regexId = /^\w{8,20}$/;
@@ -28,7 +28,10 @@ function Join() {
         <form>
           <div>
             <h5>이용약관</h5>
-            <textarea readonly disabled value={`
+            <textarea
+              readonly
+              disabled
+              value={`
 제1조(목적) 이 약관은 업체 회사(전자상거래 사업자)가 운영하는 업체
 사이버 몰(이하 “몰”이라 한다)에서 제공하는 인터넷 관련 서비스(이하
 “서비스”라 한다)를 이용함에 있어 사이버 몰과 이용자의 권리․의무 및
@@ -303,8 +306,8 @@ function Join() {
 경우에는 거소를 관할하는 지방법원의 전속관할로 합니다. 다만, 제소
 당시 이용자의 주소 또는 거소가 분명하지 않거나 외국 거주자의
 경우에는 민사소송법상의 관할법원에 제기합니다. ② “몰”과 이용자
-간에 제기된 전자상거래 소송에는 한국법을 적용합니다.`} >
-            </textarea>
+간에 제기된 전자상거래 소송에는 한국법을 적용합니다.`}
+            ></textarea>
           </div>
           <div className="agree-check">
             <input type="checkbox" name="agree" value="" id="check" />
@@ -339,7 +342,7 @@ function Join() {
               <input id="phone_txt" type="text" placeholder="Phone" />
             </div>
             <div className="input-btn">
-              <Button className="btn_join" title='Join' />
+              <Button className="btn_join" title="Join" />
             </div>
           </div>
         </form>

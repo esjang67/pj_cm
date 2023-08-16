@@ -1,14 +1,13 @@
 import { useState } from "react";
 import Button from "../custom/Button";
-import "./Login.css";
+import "../pageCss/Login.css";
 
 function Login() {
-
-  const [ loginId, setLoginId ] = useState('');
+  const [loginId, setLoginId] = useState("");
 
   const onLoginHandler = () => {
-    alert(loginId)
-  }
+    alert(loginId);
+  };
 
   return (
     <div className="Login">
@@ -21,7 +20,7 @@ function Login() {
               className="form-control form-control-id"
               placeholder="ID"
               required
-              onChange={(e)=> {
+              onChange={(e) => {
                 setLoginId(e.target.value);
               }}
             />
@@ -32,7 +31,11 @@ function Login() {
               required
             />
             <div className="form-btn">
-              <Button className="btn_login" title='Login' onClickHandler={onLoginHandler} />
+              <Button
+                className="btn_login"
+                title="Login"
+                onClickHandler={onLoginHandler}
+              />
             </div>
           </form>
         </div>

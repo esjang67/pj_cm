@@ -1,5 +1,6 @@
 .Area {
   display: flex;
+  margin: auto;
   /* border: 1px solid red; */
 }
 .Area .local {

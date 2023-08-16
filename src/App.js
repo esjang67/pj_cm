@@ -12,9 +12,9 @@ import axiosJsonp from "axios-jsonp";
 import { useDispatch, useSelector } from "react-redux";
 import { setMuseum } from "./redux/MuseumSlice";
 import Header from "./component/Header";
-import Join from "./component/Join";
-import Login from "./component/Login";
 import ReviewDetail from "./page/ReviewDetail";
+import Login from "./page/Login";
+import Join from "./page/Join";
 // import ComboMuseum from "./component/ComboMuseum";
 
 const key = "00BB282F-DCAE-3E24-A85A-6FA4A7221CDF";
