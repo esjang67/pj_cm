@@ -1,6 +1,7 @@
 .Header {
   width: 1200px;
-  background: rgb(6, 0, 106);
+  height: 60px;
+  /* background: #06006a; */
   background: linear-gradient(
     90deg,
     rgba(6, 0, 106, 0.8869922969187675) 0%,
@@ -8,9 +9,33 @@
     rgba(0, 212, 255, 0.5592612044817927) 100%
   );
   color: white;
-  font-weight: bold;
+  /* font-weight: bold; */
 
   position: fixed;
   justify-content: space-between;
   top: 0;
+  display: flex;
+  line-height: 30px;
+
+  cursor: pointer;
+}
+.Header .menu-left {
+  display: flex;
+  margin-left: 20px;
+}
+
+.Header .menu-right {
+  display: flex;
+  margin-right: 20px;
+}
+
+.Header .menu-left > div {
+  /* border: 1px solid red; */
+  padding: 15px;
+}
+
+.Header .menu-right > div {
+  /* border: 1px solid red; */
+  padding: 15px;
+  /* line-height: 60px; */
 }

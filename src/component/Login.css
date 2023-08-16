@@ -36,25 +36,22 @@
   text-align: right;
 }
 .Login button {
-  display: inline-block;
-  width: 100px;
-  height: 50px;
-  margin-top: 50px;
-  border: 2px solid #5942c1;
-  background: #5942c1;
-  border-radius: 25px;
-  padding: 3px 12px 5px 12px;
-  color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 0px;
-  /* -webkit-transition: all 0.1s ease-out;
-  transition: all 0.1s ease-out; */
+  background:linear-gradient(to bottom, #47a3ff 5%, #167de3 100%);
+	background-color:#47a3ff;
+	border-radius:5px;
+	border:1px solid #5aa8f5;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	padding:10px 25px;
+	text-decoration:none;
+  margin: 10px;
 }
 .Login button:hover {
-  color: #5942c1;
+  color: #47a3ff;
   background: #fff;
-  /* border: 2px solid #5942c1; */
 }
 .Login button:active {
   box-shadow: none;

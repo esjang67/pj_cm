@@ -20,6 +20,7 @@
   min-height: 200px;
   resize: vertical;
   resize: none;
+  background: transparent;
 }
 .Join .join-container form {
   margin-top: 40px;
@@ -51,12 +52,12 @@
   outline: none;
 }
 .Join .input-area input:hover {
-  border-bottom: 1px solid blue;
+  border-bottom: 1px solid #1a237e;
 }
 
 .Join .input-area input:focus {
   /* border: none; */
-  border-bottom: 1px solid blue;
+  border-bottom: 1px solid #1a237e;
 }
 
 .Join .input-area span {
@@ -64,16 +65,24 @@
 }
 
 .Join .input-btn .btn_join {
-  display: inline-block;
-  width: 100px;
-  height: 50px;
-  margin-top: 30px;
-  border: 2px solid #5942c1;
-  background: #5942c1;
-  border-radius: 25px;
-  padding: 3px 12px 5px 12px;
-  color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 0px;
+  background:linear-gradient(to bottom, #47a3ff 5%, #167de3 100%);
+	background-color:#47a3ff;
+	border-radius:5px;
+	border:1px solid #5aa8f5;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	padding:10px 25px;
+	text-decoration:none;
+  margin: 10px;
+}
+
+.Join .input-btn .btn_join:hover {
+  color: #47a3ff;
+  background: #fff;
+}
+.Join .input-btn .btn_join:active {
+  box-shadow: none;
 }

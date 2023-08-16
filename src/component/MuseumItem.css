@@ -1,19 +1,38 @@
 .MuseumItem {
-  width: 200px;
-  height: 150px;
-  border: 1px solid red
+  width: 480px;
+  height: 170px;
+  border: 1px solid rgba(133, 133, 133, 0.76);
+  border-radius: 5px;
+  margin: 5px;
 }
-.MuseumItem .museumLogo {
-  width: 180px;
-  height: 100px;
-  text-align: center;
+.MuseumItem:hover {
+  border: 1px solid rgba(53, 67, 255, 0.671);
 }
-.MuseumItem .museumLogo img {
+.MuseumItem .item > div {
+  margin: 10px;
+}
+
+.MuseumItem .item > div > span {
+  color: #5942c1;
+  
+}
+.MuseumItem .item .item_name {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+
+/* .MuseumItem .item .item_top > div  {
+  border: 1px solid red;
+  display:inline-block;
+  width: auto;
+} */
+/* .MuseumItem .museumLogo img {
   font-size: 12px;
   margin: 10px;
   border: 1px solid red;
   width:80%
-}
+} */
 
 .MuseumItem .name p {
   font-size: 16px;

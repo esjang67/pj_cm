@@ -2,11 +2,17 @@ import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { getMuseumName } from "../util/util_museum";
 import { getFormettedDate } from "../util/util_date";
+import { useState } from "react";
 
-function ReviewList({ rList }) {
+function ReviewList() {
   const { museum } = useSelector((state) => state);
+  const data = JSON.parse(localStorage.getItem("Pg_CM_Rv"));
+  const [rList, setRList] = useState(data);
   const navigate = useNavigate();
 
+  if(data===null){
+    return
+  }
   // 로컬스토리지 정보 : Pg_CM_Rv[{id:0, date:'2023-08-14',museum:'1156',content:'내용}]
 
   function onRowHandler(e) {

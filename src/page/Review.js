@@ -1,31 +1,17 @@
-import { useState } from "react";
 import ReviewList from "../component/ReviewList";
 import { useNavigate } from "react-router-dom";
 import "../pageCss/Review.css";
 
 function Review() {
-  const data = JSON.parse(localStorage.getItem("Pg_CM_Rv"));
-  const [rList, setRList] = useState(data);
   const navigate = useNavigate();
 
   function reviewNewHandler() {
     navigate("/review/new");
   }
 
-  if (!data) {
-    return (
-      <div className="Review">
-        <div className="review_btn_new">
-          <button onClick={reviewNewHandler}>글쓰기</button>
-        </div>
-        <div>저장된 북마크가 없습니다.</div>
-      </div>
-    );
-  }
-
   return (
     <div className="Review">
-      <h4>후기</h4>
+      <h4><i class="fa-regular fa-note-sticky"/> 리뷰</h4>
       <div className="review_btn_new">
         <button onClick={reviewNewHandler}>글쓰기</button>
       </div>
@@ -42,7 +28,7 @@ function Review() {
             </tr>
           </thead>
           <tbody>
-            <ReviewList rList={rList} />
+            <ReviewList />
           </tbody>
         </table>
         {/* )} */}

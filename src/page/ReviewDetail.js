@@ -1,12 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 import ComboMuseum from "../component/ComboMuseum";
 import { getFormettedDate } from "../util/util_date";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 // 1개 데이터만 가지고 있으므로 {}로 정의함!!!
 function ReviewDetail() {
   const { id } = useParams("id"); // 리뷰id 새글작성 : id:new
   const idRef = useRef(0);
+  const navigate = useNavigate();
   // 내용 state
   const [write, setWrite] = useState({
     date: getFormettedDate(new Date()),
@@ -14,6 +15,7 @@ function ReviewDetail() {
     content: "",
   });
   console.log("ReviewDetail write", write);
+
   useEffect(() => {
     if (String(id) !== "new") {
       // 로컬스토리지 조회
@@ -27,7 +29,7 @@ function ReviewDetail() {
       });
     }
     // console.log('ReviewDetail write', write)
-  }, []);
+  }, [id]);
 
   function changeDateHandler(e) {
     setWrite({
@@ -102,7 +104,7 @@ function ReviewDetail() {
       localStorage.setItem("Pg_CM_Rv", JSON.stringify(upData));
     }
     alert("저장했습니다.");
-    navigator(-1);
+    navigate('/review');
   }
 
   function onBtnDelete() {
@@ -111,19 +113,18 @@ function ReviewDetail() {
       let localData = JSON.parse(localStorage.getItem("Pg_CM_Rv"));
       let _localData = localData.filter((d) => String(d.id) !== String(id));
       localStorage.setItem("Pg_CM_Rv", JSON.stringify(_localData));
-      navigator(-1);
+      navigate(-1);
     }
   }
 
-  // console.log("ReviewDetail write", write.museum);
-
   return (
     <div className="ReviewDetail">
-      <div className="container">
+      <h4><i class="fa-solid fa-pen-to-square"/> 박물관에서의 추억을 남겨보세요</h4>
+      <div className="rd-container">
         <form>
-          <div>
-            <div>
-              <span>방문일자</span>
+          <div className="rd-write">
+            <div className="rd-w-date">
+              <p>방문일자</p>
               <input
                 type="date"
                 value={write.date}
@@ -131,8 +132,8 @@ function ReviewDetail() {
               />
             </div>
 
-            <div>
-              <span>박물관</span>
+            <div className="rd-w-combo">
+              <p>박물관</p>
               {/* 박물관 리스트 콤보 */}
               <ComboMuseum
                 selId={write.museum}
@@ -140,8 +141,8 @@ function ReviewDetail() {
               />
             </div>
 
-            <div>
-              <span>내용</span>
+            <div className="rd-w-text">
+              <p>내용</p>
               <textarea
                 placeholder="박물관을 다녀온 이야기를 기록해 보세요."
                 value={write.content}
@@ -150,7 +151,7 @@ function ReviewDetail() {
             </div>
           </div>
 
-          <div>
+          <div className="rd-btn">
             {
               // 신규화면시 삭제버튼 안보임
               String(id) !== "new" ? (

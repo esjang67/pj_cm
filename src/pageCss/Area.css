@@ -1,15 +1,14 @@
 .Area {
+  display: flex;
+  /* border: 1px solid red; */
 }
 .Area .local {
-  margin: 10px;
+  /* border: 1px solid red; */
+  /* margin: 10px; */
+  width: 170px;
 }
 .Area .container {
-  margin-top: 10px;
-}
-
-.MuseumGrid {
-  border-top: 1px solid blue;
-}
-.MuseumGrid h3 {
-  margin-top: 10px;
+  /* border: 1px solid red; */
+  /* margin-top: 10px; */
+  width: calc(100% - 100px);
 }

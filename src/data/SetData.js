@@ -17,7 +17,7 @@ function SetData(data) {
       id: String(Mdata.id).split('.')[1],  //LT_P_DGMUSEUMART.1에서 숫자만 가져와 id로 만듬
       mus_nam: Mdata.properties.mus_nam,
       mus_typ: Mdata.properties.mus_typ,
-      logo_src: '../img/국립중앙박물관.jpg'  
+      // logo_src: '../img/국립중앙박물관.jpg'  
     })
 
     tmpInfo.push({

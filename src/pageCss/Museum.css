@@ -1,0 +1,70 @@
+.Museum {
+}
+
+
+.Museum .MuseumDeatail {
+  border-left: 10px solid #1A237e;
+  border-right: 2px solid #1A237e;
+  margin: auto;
+  margin-top: 30px;
+  width: 800px;
+  padding: 10px;
+  /* border-radius: 10px; */
+  box-shadow: 3px 5px 20px 1px #1A237e;
+   color: #1A237e;
+}
+
+.Museum .MuseumDeatail h3 {
+  text-align: center;
+  padding-bottom: 20px;
+  color: #1A237e;
+  font-weight: 800;
+  margin-top: 30px;
+  text-shadow: 1px 3px 10px #42a5f5 ;
+}
+
+.Museum .MuseumDeatail > div {
+  /* border: 1px solid red */
+}
+
+.Museum .MuseumDeatail .mus_ti_pa {
+  display: flex;
+  margin-top: 30px;
+}
+.Museum .MuseumDeatail .mus_ti_pa > div {
+  /* border: 1px solid red; */
+  width: 45%
+}
+
+.Museum .MuseumDeatail > div .p_title {
+  font-size: 20px;
+  /* color: red; */
+}
+
+.Museum .MuseumDeatail .mus_book {
+  text-align: right;
+}
+
+.Museum .MuseumDeatail button {
+  background:linear-gradient(to bottom, #47a3ff 5%, #167de3 100%);
+	background-color:#47a3ff;
+	border-radius:5px;
+	border:1px solid #5aa8f5;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	padding:10px 25px;
+	text-decoration:none;
+  width: auto;
+}
+
+.Museum .MuseumDeatail button:hover {
+	background:linear-gradient(to bottom, #167de3 5%, #47a3ff 100%);
+	background-color:#167de3;
+}
+.Museum .MuseumDeatail button:active {
+	position:relative;
+	top:1px;
+}

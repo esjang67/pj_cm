@@ -13,14 +13,14 @@ function ComboMuseum({ selId, onSubmit }) {
 
   return (
     <div className="ComboMuseum">
-      <select onChange={onSubmit} defaultValue={0}>
+      <select onChange={onSubmit} value={selId}>
         {comboMuseumAll.map((Mdata) => {
           const cData = Mdata.split(":");
           return (
             <option
               key={cData[0]}
               data-id={cData[0]}
-              selected={String(cData[0]) === String(selId) ? "selected" : ""}
+              // selected={String(cData[0]) === String(selId) ? "selected" : ""}
               value={cData[0]}
             >
               {cData[1]}

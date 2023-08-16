@@ -38,14 +38,6 @@ function AreaList({ setArea }) {
           >
             {data}
           </button>
-
-          // <Button
-          //   className="areaBtn"
-          //   key={i}
-          //   title={data}
-          //   size={"area"}
-          //   onsubmit={onClickHandler}
-          // />
         ))}
       </div>
     </div>

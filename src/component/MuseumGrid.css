@@ -1,8 +1,14 @@
 .MuseumGrid {
 }
-
+.MuseumGrid h4 {
+  margin-bottom: 10px;
+  color: #5942c1;
+  border-bottom: 1px solid #5942c1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 .MuseumGrid .list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap:5px
 }

@@ -12,14 +12,25 @@ function MuseumItem({ data }) {
 
   return (
     <div className="MuseumItem" onClick={onClickHandler}>
-      <div className="museumLogo">
+      {/* <div className="museumLogo">
         <img
           src={process.env.PUBLIC_URL + "./img/국립중앙박물관.jpg"}
           alt={data.mus_nam}
         />
-      </div>
-      <div className="name">
-        <p>{data.mus_nam}</p>
+      </div> */}
+      <div className="item">
+        <div className="item_name">
+        <span>{data.mus_nam}</span>
+        </div>
+        <div className="item_type">
+        <span>{data.mus_typ}</span>
+        </div>
+        <div className="item_add">
+        <span>{data.new_adr}</span>
+        </div>
+        <div className="item_tel">
+        <span>{data.opr_tel}</span>
+        </div>
       </div>
     </div>
   );

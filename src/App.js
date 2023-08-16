@@ -52,7 +52,7 @@ function App() {
             id: String(Mdata.id).split(".")[1], //LT_P_DGMUSEUMART.1에서 숫자만 가져와 id로 만듬
             mus_nam: Mdata.properties.mus_nam,
             mus_typ: Mdata.properties.mus_typ,
-            logo_src: "../img/국립중앙박물관.jpg",
+            // logo_src: "../img/국립중앙박물관.jpg",
             new_adr: Mdata.properties.new_adr,
             area_adr: String(Mdata.properties.new_adr).split(" ")[0], // 지역따로 저장
             opr_tel: Mdata.properties.opr_tel,

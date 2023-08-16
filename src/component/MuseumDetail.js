@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 // import { useParams } from "react-router-dom";
-import Button from "../component/Button";
+import '../pageCss/Museum.css';
 
 function MuseumDetail({ id }) {
   const { museum } = useSelector((state) => state);
@@ -28,27 +28,39 @@ function MuseumDetail({ id }) {
   };
 
   return (
-    <div className="Museum">
-      <Button title={"북마크"} size={"basic"} onsubmit={onClickHandler} />
-      <h1>{museumInfo.mus_nam}</h1>
+    <div className="MuseumDeatail">
+      <h3>{museumInfo.mus_nam}</h3>
 
-      <p>{museumInfo.mus_typ}</p>
-      <p>{museumInfo.new_adr}</p>
-      <p>{museumInfo.opr_tel}</p>
-      <p>관람시간</p>
-      <p>평일</p>
-      <p>
-        {museumInfo.wds_tme} - {museumInfo.wde_tme}
-      </p>
-      <p>휴일</p>
-      <p>
-        {museumInfo.hds_tme} - {museumInfo.hde_tme}
-      </p>
-      <p>휴관일 : {museumInfo.hdy_inf}</p>
-      <p>관람료</p>
-      <p>어른 : {museumInfo.adt_fee}원</p>
-      <p>청소년 : {museumInfo.chd_fee}원</p>
-      <p>어린이 : {museumInfo.yot_fee}원</p>
+      <div className="mus_def">
+        <p>{museumInfo.mus_typ}</p>
+        <p>{museumInfo.new_adr}</p>
+        <p>{museumInfo.opr_tel}</p>
+      </div>
+      <div className="mus_ti_pa">
+        <div className="mus_time">
+          <p className="p_title"><i class="fa-regular fa-clock"></i> 관람시간</p>
+          <p>평일</p>
+          <p>
+            {museumInfo.wds_tme} - {museumInfo.wde_tme}
+          </p>
+          <p>휴일</p>
+          <p>
+            {museumInfo.hds_tme} - {museumInfo.hde_tme}
+          </p>
+          <p>휴관일 : {museumInfo.hdy_inf}</p>
+        </div>
+
+        <div className="mus_pay">
+          <p className="p_title"><i class="fa-solid fa-coins"></i> 관람료</p>
+          <p>어른 : {museumInfo.adt_fee}원</p>
+          <p>청소년 : {museumInfo.chd_fee}원</p>
+          <p>어린이 : {museumInfo.yot_fee}원</p>
+        </div>
+      </div>
+      <div className="mus_book">
+        <button onClick={onClickHandler}>
+          <i class="fa-regular fa-bookmark"/> 북마크</button>
+      </div>
     </div>
   );
 }
