@@ -45,7 +45,7 @@
   text-align: right;
 }
 
-.Museum .MuseumDeatail button {
+/* .Museum .MuseumDeatail button {
   background:linear-gradient(to bottom, #47a3ff 5%, #167de3 100%);
 	background-color:#47a3ff;
 	border-radius:5px;
@@ -67,4 +67,4 @@
 .Museum .MuseumDeatail button:active {
 	position:relative;
 	top:1px;
-}
+} */

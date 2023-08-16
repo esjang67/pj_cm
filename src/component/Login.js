@@ -1,3 +1,4 @@
+import Button from "../custom/Button";
 import "./Login.css";
 
 function Login() {
@@ -20,7 +21,7 @@ function Login() {
               required
             />
             <div className="form-btn">
-              <button className="btn_login">Login</button>
+              <Button className="btn_login" title='Login' />
             </div>
           </form>
         </div>

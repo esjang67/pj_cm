@@ -71,28 +71,3 @@ font-family: "Open Sans", sans-serif; */
   vertical-align: middle;
 }
 
-.Mark .markList .rwd-table .btn_del .mark-btn-del {
-  background:linear-gradient(to bottom, #47a3ff 5%, #167de3 100%);
-	background-color:#47a3ff;
-	border-radius:5px;
-	border:1px solid #5aa8f5;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:16px;
-	padding:10px 25px;
-	text-decoration:none;
-}
-
-.Mark .markList .rwd-table .btn_del .mark-btn-del:hover {
-	color: #47a3ff;
-  background: #fff;
-}
-.Mark .markList .rwd-table .btn_del .mark-btn-del:active {
-  box-shadow: none;
-}
-
-.Mark .markList .rwd-table td:last-child {
-  border-right: 0px;
-}

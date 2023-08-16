@@ -1,5 +1,4 @@
 import Banner from "../component/Banner";
-// import MuseumGrid from "../component/MuseumGrid";
 
 import "../pageCss/Main.css";
 function Main() {
@@ -8,6 +7,7 @@ function Main() {
       <Banner />
       <i class="fa-regular fa-comment"/>
       <p>본 웹페이지의 기본사이즈 1200px입니다.</p>
+      
 {/* 
       <div className="main_top10">
         <h4>인기 Top</h4>

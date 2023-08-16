@@ -18,7 +18,7 @@
   /* border: 1px solid red; */
 }
 
-.Review .review_btn_new button {
+/* .Review .review_btn_new button {
   background:linear-gradient(to bottom, #47a3ff 5%, #167de3 100%);
 	background-color:#47a3ff;
 	border-radius:5px;
@@ -39,7 +39,7 @@
 }
 .Review .review_btn_new button:active {
 	box-shadow: none;
-}
+} */
 
 
 .Review .reviewList {
@@ -150,7 +150,7 @@
   text-align: center;
 }
 .ReviewDetail .rd-container .rd-btn button {
-  background:linear-gradient(to bottom, #47a3ff 5%, #167de3 100%);
+  /* background:linear-gradient(to bottom, #47a3ff 5%, #167de3 100%);
 	background-color:#47a3ff;
 	border-radius:5px;
 	border:1px solid #5aa8f5;
@@ -160,14 +160,14 @@
 	font-family:Arial;
 	font-size:16px;
 	padding:10px 25px;
-	text-decoration:none;
+	text-decoration:none; */
   margin: 10px;
 }
 
-.ReviewDetail .rd-container .rd-btn button:hover {
+/* .ReviewDetail .rd-container .rd-btn button:hover {
   color: #47a3ff;
   background: #fff;
 }
 .ReviewDetail .rd-container .rd-btn button:active {
   box-shadow: none;
-}
+} */

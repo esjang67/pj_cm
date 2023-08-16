@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import ComboMuseum from "../component/ComboMuseum";
 import { getFormettedDate } from "../util/util_date";
 import { useNavigate, useParams } from "react-router-dom";
+import Button from "../custom/Button";
 
 // 1개 데이터만 가지고 있으므로 {}로 정의함!!!
 function ReviewDetail() {
@@ -155,11 +156,11 @@ function ReviewDetail() {
             {
               // 신규화면시 삭제버튼 안보임
               String(id) !== "new" ? (
-                <button onClick={onBtnDelete}>삭제</button>
+                <Button onClickHandler={onBtnDelete} title='삭제' />
               ) : null
             }
             {/* 저장: 신규/수정 */}
-            <button onClick={onBtnSave}>저장</button>
+            <Button onClickHandler={onBtnSave} title='저장' />
           </div>
         </form>
       </div>

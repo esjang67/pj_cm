@@ -1,3 +1,4 @@
+import Button from "../custom/Button";
 import "./Join.css";
 import { useState } from "react";
 
@@ -338,7 +339,7 @@ function Join() {
               <input id="phone_txt" type="text" placeholder="Phone" />
             </div>
             <div className="input-btn">
-              <button className="btn_join">Join</button>
+              <Button className="btn_join" title='Join' />
             </div>
           </div>
         </form>

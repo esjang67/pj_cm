@@ -35,7 +35,7 @@
 .Login .form-btn {
   text-align: right;
 }
-.Login button {
+/* .Login button {
   background:linear-gradient(to bottom, #47a3ff 5%, #167de3 100%);
 	background-color:#47a3ff;
 	border-radius:5px;
@@ -55,7 +55,7 @@
 }
 .Login button:active {
   box-shadow: none;
-}
+} */
 .Login .login-content-signin > div,
 .login-content-signup > div {
   overflow: hidden;

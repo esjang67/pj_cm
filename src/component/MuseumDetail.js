@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 // import { useParams } from "react-router-dom";
 import '../pageCss/Museum.css';
+import Button from "../custom/Button";
 
 function MuseumDetail({ id }) {
   const { museum } = useSelector((state) => state);
@@ -58,8 +59,7 @@ function MuseumDetail({ id }) {
         </div>
       </div>
       <div className="mus_book">
-        <button onClick={onClickHandler}>
-          <i class="fa-regular fa-bookmark"/> 북마크</button>
+        <Button onClickHandler={onClickHandler} title='북마크' icon={<i class="fa-regular fa-bookmark"/>} />
       </div>
     </div>
   );

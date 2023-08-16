@@ -64,7 +64,7 @@
   color: red;
 }
 
-.Join .input-btn .btn_join {
+/* .Join .input-btn .btn_join {
   background:linear-gradient(to bottom, #47a3ff 5%, #167de3 100%);
 	background-color:#47a3ff;
 	border-radius:5px;
@@ -85,4 +85,4 @@
 }
 .Join .input-btn .btn_join:active {
   box-shadow: none;
-}
+} */

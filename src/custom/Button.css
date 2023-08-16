@@ -1,0 +1,21 @@
+button {
+  background:linear-gradient(to bottom, #47a3ff 5%, #167de3 100%);
+	background-color:#47a3ff;
+	border-radius:5px;
+	border:1px solid #5aa8f5;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	padding:10px 25px;
+	text-decoration:none;
+}
+
+button:hover {
+	color: #47a3ff;
+  background: #fff;
+}
+button:active {
+  box-shadow: none;
+}

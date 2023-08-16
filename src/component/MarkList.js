@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import Button from "../custom/Button";
 
 function MarkList() {
   const { museum } = useSelector((state) => state);
@@ -45,8 +46,7 @@ function MarkList() {
         <td data-th="지역">{Mdata.area_adr}</td>
         <td data-th="박물관">{Mdata.mus_nam}</td>
         <td className="btn_del">
-          <button className="mark-btn-del" onClick={onDeleteHandler}>
-            <i class="fa-solid fa-xmark"/></button>
+          <Button className="mark-btn-del" onClickHandler={onDeleteHandler} icon={<i class="fa-solid fa-xmark"/>}/>
         </td>
       </tr>
     );
