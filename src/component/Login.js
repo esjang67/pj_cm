@@ -1,7 +1,15 @@
+import { useState } from "react";
 import Button from "../custom/Button";
 import "./Login.css";
 
 function Login() {
+
+  const [ loginId, setLoginId ] = useState('');
+
+  const onLoginHandler = () => {
+    alert(loginId)
+  }
+
   return (
     <div className="Login">
       <div className="login-content login-content-signin">
@@ -13,6 +21,9 @@ function Login() {
               className="form-control form-control-id"
               placeholder="ID"
               required
+              onChange={(e)=> {
+                setLoginId(e.target.value);
+              }}
             />
             <input
               type="password"
@@ -21,7 +32,7 @@ function Login() {
               required
             />
             <div className="form-btn">
-              <Button className="btn_login" title='Login' />
+              <Button className="btn_login" title='Login' onClickHandler={onLoginHandler} />
             </div>
           </form>
         </div>

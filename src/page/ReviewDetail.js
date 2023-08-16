@@ -120,7 +120,7 @@ function ReviewDetail() {
 
   return (
     <div className="ReviewDetail">
-      <h4><i class="fa-solid fa-pen-to-square"/> 박물관에서의 추억을 남겨보세요</h4>
+      <h4><i className="fa-solid fa-pen-to-square"/> 박물관에서의 추억을 남겨보세요</h4>
       <div className="rd-container">
         <form>
           <div className="rd-write">
@@ -145,6 +145,7 @@ function ReviewDetail() {
             <div className="rd-w-text">
               <p>내용</p>
               <textarea
+                defaultValue=''
                 placeholder="박물관을 다녀온 이야기를 기록해 보세요."
                 value={write.content}
                 onChange={changeContentHandler}

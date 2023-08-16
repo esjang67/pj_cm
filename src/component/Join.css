@@ -9,11 +9,11 @@
   position: relative;
   padding: 40px;
   width: 100%;
-  border-top: 5px solid #5942c1;
+  border-top: 5px solid #1A237e;
   box-shadow: 0 0px 70px rgba(0, 0, 0, 0.1);
 }
 .Join .join-container h4 {
-  color: #5942c1;
+  color: #1A237e;
 }
 .Join .join-container textarea {
   width: 100%;
@@ -21,6 +21,9 @@
   resize: vertical;
   resize: none;
   background: transparent;
+
+  /* readonly
+  disabled */
 }
 .Join .join-container form {
   margin-top: 40px;

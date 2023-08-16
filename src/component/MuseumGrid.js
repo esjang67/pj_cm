@@ -38,7 +38,7 @@ function MuseumGrid({ areaName }) {
 
     return (
       <div className="MuseumGrid">
-        <h4><i class="fa-solid fa-location-crosshairs" /> {areaName}</h4>
+        <h4><i className="fa-solid fa-location-crosshairs" /> {areaName}</h4>
         <div className="list">
           {aaaaa.map((Mdata) => {
             return <MuseumItem key={Mdata.id} data={Mdata} />;

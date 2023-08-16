@@ -5,7 +5,7 @@ function Main() {
   return (
     <div className="Main">
       <Banner />
-      <i class="fa-regular fa-comment"/>
+      <i className="fa-regular fa-comment"/>
       <p>본 웹페이지의 기본사이즈 1200px입니다.</p>
       
 {/* 

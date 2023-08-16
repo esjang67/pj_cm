@@ -5,7 +5,7 @@ function Mark() {
   
   return (
     <div className="Mark">
-      <h4><i class="fa-regular fa-bookmark"/> 북마크</h4>
+      <h4><i className="fa-regular fa-bookmark"/> 북마크</h4>
       <div className="markList">
         <table className="rwd-table">
           <thead>

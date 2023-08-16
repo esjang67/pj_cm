@@ -13,11 +13,11 @@
   padding: 40px;
   height: 500px;
   box-shadow: 0 0px 70px rgba(0, 0, 0, 0.1);
-  border-top: 5px solid #5942c1;
+  border-top: 5px solid #1A237e;
 }
 
 .Login .login-content h4 {
-  color: #5942c1;
+  color: #1A237e;
 }
 .Login input {
   margin-top: 20px;
