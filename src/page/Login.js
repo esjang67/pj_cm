@@ -1,12 +1,16 @@
 import { useState } from "react";
 import Button from "../custom/Button";
 import "../pageCss/Login.css";
+import { useNavigate } from "react-router-dom";
 
-function Login() {
-  const [loginId, setLoginId] = useState("");
+function Login( { setUser }) {
+
+  const navigate = useNavigate();
+  const [id, setId] = useState();
 
   const onLoginHandler = () => {
-    alert(loginId);
+    setUser(id)
+    navigate('/')
   };
 
   return (
@@ -21,7 +25,7 @@ function Login() {
               placeholder="ID"
               required
               onChange={(e) => {
-                setLoginId(e.target.value);
+                setId(e.target.value);
               }}
             />
             <input

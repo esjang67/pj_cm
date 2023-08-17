@@ -1,1 +1,33 @@
+.Main {
+}
 
+.Main .main-msg {
+  margin: 20px;
+}
+.Main .main-notice {
+  margin: 20px;
+  width: 50%;
+
+}
+
+.Notice {
+  width: 100%;
+  height: 400px;
+}
+
+.Notice .noticeName {
+  border-bottom: 1px dashed gray;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.Notice .noticeList {
+  /* border: 1px solid red; */
+  display: flex;
+  font-size: 20px;
+  height: 40px;
+  margin-left: 10px;
+}
+.Notice .noticeList .noticeDate {
+  width: 20%;
+}

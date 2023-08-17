@@ -321,7 +321,7 @@ function Join() {
                 id="id_txt"
                 type="text"
                 placeholder="ID"
-                autocomplete="off"
+                // autocomplete="off"
                 required
                 onChange={onIdHandler}
               />

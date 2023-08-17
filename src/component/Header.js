@@ -2,9 +2,23 @@ import Mdata from "../data/Mdata";
 import "./Header.css";
 import { useNavigate } from "react-router-dom";
 
-function Header() {
+function Header({user, setUser }) {
   const navigate = useNavigate();
+  let logInOut = (user !== undefined) ? 'LOGOUT' : 'LOGIN'
 
+  const onLoginHandler = (e) => {
+
+    if(e.target.innerText === 'LOGIN' ){
+      navigate("/member/login")
+    } else {
+      if(window.confirm("로그아웃하시겠습니까?")){
+        setUser(undefined);
+        navigate('/');
+      }
+    }
+  } 
+
+  let loginMsg = (user!==undefined)? `${user}님 환영합니다.`:''
   
   return (
     <div className="Header">
@@ -25,9 +39,13 @@ function Header() {
         </div>
       </div>
       <div className="menu-right">
-        {/* <div className="menu-user"></div> */}
-        <div onClick={() => navigate("/member/login")}>LOGIN</div>
-        <div onClick={() => navigate("/member/join")}>JOIN</div>
+        <div className="menu-user">{loginMsg}</div>
+        <div onClick={onLoginHandler}>{logInOut}</div>
+        {
+          (logInOut === 'LOGIN') ? 
+          <div onClick={() => navigate("/member/join")}>JOIN</div>
+          :null
+        }
       </div> 
 
     </div>

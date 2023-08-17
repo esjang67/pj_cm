@@ -17,16 +17,22 @@
   display: flex;
   line-height: 30px;
 
-  cursor: pointer;
+  
 }
 .Header .menu-left {
   display: flex;
   margin-left: 20px;
+  cursor: pointer;
 }
 
 .Header .menu-right {
   display: flex;
   margin-right: 20px;
+  cursor: pointer;
+}
+
+.Header .menu-right .menu-user {
+  cursor: default;
 }
 
 .Header .menu-left > div {

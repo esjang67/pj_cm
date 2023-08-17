@@ -1,12 +1,22 @@
 import Banner from "../component/Banner";
+import Notice from "../component/Notice";
 
 import "../pageCss/Main.css";
 function Main() {
   return (
     <div className="Main">
-      <Banner />
-      <i className="fa-regular fa-comment"/>
-      <p>본 웹페이지의 기본사이즈 1200px입니다.</p>
+      <div className="main-banner">
+        <Banner />
+      </div>
+
+      <div className="main-notice">
+        <Notice />
+      </div>
+      
+      <div className="main-msg">
+        <i className="fa-regular fa-comment"/>     
+        <span>본 웹페이지의 기본사이즈 1200px입니다.</span><br/>
+      </div>
       
 {/* 
       <div className="main_top10">
