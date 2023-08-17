@@ -1,11 +1,14 @@
+import Mdata from "../data/Mdata";
 import "./Header.css";
 import { useNavigate } from "react-router-dom";
 
 function Header() {
   const navigate = useNavigate();
 
+  
   return (
     <div className="Header">
+      <Mdata/>
 
       <div className="menu-left">
         <div className="m-logo" onClick={() => navigate("/")}>

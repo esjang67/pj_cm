@@ -35,8 +35,7 @@ function MarkList() {
 
   return mList.map((mark) => {
     // museum에서 찾기
-    const _museum = museum;
-    const Mdata = _museum.find((m) => String(m.id) === String(mark));
+    const Mdata = museum.find((m) => String(m.id) === String(mark));
 
     return (
       <tr key={Mdata.id} data-id={Mdata.id} onClick={onRowHandler}>
