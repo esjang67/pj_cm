@@ -15,10 +15,9 @@ function Notice() {
       {
         MokData.map((data) => {
           return(
-          <div className="noticeList" key={data.id}>
-            <div className="noticeDate">{data.date}</div>
-            <div className="noticeTitle">{data.title}</div>
-          </div>
+            <ul className="noticeList" key={data.id}>
+              <li className="noticeDate">{data.date} {data.title}</li>
+            </ul>
           )
         })
       }

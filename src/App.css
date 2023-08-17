@@ -1,14 +1,16 @@
 .App {
   /* text-align: center; */
   /* height: 3000px; */
-  /* background-image: linear-gradient(to bottom right, #76abdf, #ffffff); */
   
   font-family: 'Noto Sans KR', sans-serif;
 }
 
 body {
+  /* background-image: linear-gradient(to bottom right, #76abdf, #ffffff); */
+
   padding-top: 70px;
-  width: 1200px;
+  /* width: 1200px; */
+  max-width: 1200px;
   /* border: 1px solid red; */
   margin: auto;
 }

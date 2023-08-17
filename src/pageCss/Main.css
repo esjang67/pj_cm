@@ -29,11 +29,7 @@
   /* border: 1px solid red; */
   display: flex;
   font-size: 20px;
-  height: 40px;
   margin-left: 10px;
-}
-.Notice .noticeList .noticeDate {
-  width: 20%;
 }
 
 .Event .eventData {
