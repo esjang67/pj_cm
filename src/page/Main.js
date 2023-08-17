@@ -1,4 +1,5 @@
 import Banner from "../component/Banner";
+import Event from "../component/Event";
 import Notice from "../component/Notice";
 
 import "../pageCss/Main.css";
@@ -8,9 +9,14 @@ function Main() {
       <div className="main-banner">
         <Banner />
       </div>
+      <div className="main-bottom">
+        <div className="main-notice">
+          <Notice />
+        </div>
 
-      <div className="main-notice">
-        <Notice />
+        <div className="main-event">
+          <Event />
+        </div>
       </div>
       
       <div className="main-msg">

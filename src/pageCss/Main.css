@@ -4,20 +4,24 @@
 .Main .main-msg {
   margin: 20px;
 }
-.Main .main-notice {
+.Main .main-bottom {
+  display: flex;
+}
+.Main .main-notice, .main-event {
   margin: 20px;
   width: 50%;
-
+  border-bottom: 1px solid gray;
 }
 
-.Notice {
+.Notice, .Event {
   width: 100%;
   height: 400px;
 }
 
-.Notice .noticeName {
+.Notice .noticeName, .eventName {
   border-bottom: 1px dashed gray;
-  font-size: 28px;
+  font-size: 26px;
+  padding-bottom: 10px;
   margin-bottom: 10px;
 }
 
@@ -30,4 +34,20 @@
 }
 .Notice .noticeList .noticeDate {
   width: 20%;
+}
+
+.Event .eventData {
+  display: flex;
+}
+
+.Event .eventData .eventData1, .eventData2 {
+  width: 50%;
+  height: 320px;
+}
+
+.Event .eventData .eventData1 {
+  background: url('../img/event1.JPG') center center / contain no-repeat;
+}
+.Event .eventData .eventData2 {
+  background: url('../img/event2.JPG') center center / contain no-repeat;
 }
