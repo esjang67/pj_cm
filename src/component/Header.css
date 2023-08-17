@@ -7,42 +7,58 @@
   background: linear-gradient(
     90deg,
     rgba(6, 0, 106, 0.8869922969187675) 0%,
-    rgba(9, 9, 121, 0.8337710084033614) 43%,
-    rgba(0, 212, 255, 0.5592612044817927) 100%
+    rgba(0, 212, 255, 0.559) 43%,
+    rgba(9, 9, 121, 0.8337710084033614) 100%
   );
+  
   color: white;
   /* font-weight: bold; */
 
   position: fixed;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   top: 0;
   display: flex;
   line-height: 30px;  
 }
-.Header .menu-left {
-  display: flex;
-  margin-left: 20px;
+  
+.Header .m-logo {
+  padding: 15px;
+  width: 60px;
+  /* border: 1px solid red; */
+}
+.Header .menu {
+  width: calc(100% - 80px);
+  padding: 0;
+  /* border: 1px solid red; */
+}
+.Header .menu .menuUl {
   cursor: pointer;
+  display: flex;
+  /* justify-content: space-between; */
+}
+.Header .menuUl > li {
+  list-style-type: none;
+  width: 70px;
+  height: 60px;
+  text-align: center;
+  line-height:40px;
+  padding: 10px 0;
+  
+  /* border: 1px solid red; */
+}
+.Header .menuUl .limouse:hover{
+color: #90caf9;
+}
+
+.Header .menuUl .m-review {
   margin-right: auto;
 }
-
-.Header .menu-right {
-  display: flex;
-  margin-right: 20px;
-  cursor: pointer;
-}
-
-.Header .menu-right .menu-user {
+.Header .menuUl .menu-user {
+  width: auto;
   cursor: default;
 }
-
-.Header .menu-left > div {
-  /* border: 1px solid red; */
-  padding: 15px;
-}
-
-.Header .menu-right > div {
-  /* border: 1px solid red; */
-  padding: 15px;
-  /* line-height: 60px; */
+@media screen and (max-width: 768px) {
+  .Header .menu {
+    font-size: 14px;
+  }
 }

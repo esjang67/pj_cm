@@ -47,3 +47,20 @@
 .Event .eventData .eventData2 {
   background: url('../img/event2.JPG') center center / contain no-repeat;
 }
+
+@media screen and (max-width: 768px) {
+  .Notice {
+    height: auto;
+  }
+  .Event {
+    height: auto;
+  }
+  .Event .eventData {
+    display: grid;
+    border: 1px solid red;
+  }
+  .Event .eventData .eventData1, .eventData2 {
+    width: 100%;
+    min-height: 320px;
+  }
+}

@@ -24,30 +24,29 @@ function Header({user, setUser }) {
     <div className="Header">
       <Mdata/>
 
-      <div className="menu-left">
-        <div className="m-logo" onClick={() => navigate("/")}>
-          <i className="fa-solid fa-house" />
-        </div>
-        <div className="m-area" onClick={() => navigate("/area")}>
-          박물관
-        </div>
-        <div className="m-mark" onClick={() => navigate("/mark")}>
-          북마크
-        </div>
-        <div className="m-review" onClick={() => navigate("/review")}>
-          리뷰
-        </div>
+      <div className="m-logo" onClick={() => navigate("/")}>
+        <i className="fa-solid fa-house" />
       </div>
-      <div className="menu-right">
-        <div className="menu-user">{loginMsg}</div>
-        <div onClick={onLoginHandler}>{logInOut}</div>
-        {
-          (logInOut === 'LOGIN') ? 
-          <div onClick={() => navigate("/member/join")}>JOIN</div>
-          :null
-        }
-      </div> 
-
+      <div className="menu">
+        <ul className="menuUl">
+          <li className="m-area limouse" onClick={() => navigate("/area")}>
+            박물관
+          </li>
+          <li className="m-mark limouse" onClick={() => navigate("/mark")}>
+            북마크
+          </li>
+          <li className="m-review limouse" onClick={() => navigate("/review")}>
+            리뷰
+          </li>
+          <li className="menu-user">{loginMsg}</li>
+          <li className='m-login limouse' onClick={onLoginHandler}>{logInOut}</li>
+          {
+            (logInOut === 'LOGIN') ? 
+            <li className='m-join limouse' onClick={() => navigate("/member/join")}>JOIN</li>
+            :null
+          }
+        </ul> 
+      </div>
     </div>
   );
 }
