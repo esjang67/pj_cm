@@ -33,6 +33,7 @@
   border-bottom: 1px solid red;
 } */
 .Login .form-btn {
+  margin-top: 60px;
   text-align: right;
 }
 /* .Login button {

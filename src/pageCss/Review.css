@@ -145,6 +145,8 @@
   resize: none;
   outline: none;
   font-family: 'Gamja Flower', cursive;
+  font-weight: 500;
+  font-size: 20px;
 }
 .ReviewDetail .rd-container .rd-btn {
   text-align: center;
