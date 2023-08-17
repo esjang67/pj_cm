@@ -39,23 +39,39 @@ function MuseumDetail({ id }) {
       </div>
       <div className="mus_ti_pa">
         <div className="mus_time">
-          <p className="p_title"><i class="fa-regular fa-clock"></i> 관람시간</p>
-          <p>평일</p>
-          <p>
-            {museumInfo.wds_tme} - {museumInfo.wde_tme}
-          </p>
-          <p>휴일</p>
-          <p>
-            {museumInfo.hds_tme} - {museumInfo.hde_tme}
-          </p>
-          <p>휴관일 : {museumInfo.hdy_inf}</p>
+          <div className="p_title"><i class="fa-regular fa-clock"></i> 관람시간</div>
+          <div className="mus_time_set">
+            <div className="mus_time_title">
+              <p>평일</p>
+              <p>휴일</p>
+              <p>휴관일</p>
+            </div>
+            <div className="mus_time_data">
+              <p>
+                {museumInfo.wds_tme} - {museumInfo.wde_tme}
+              </p>
+              <p>
+                {museumInfo.hds_tme} - {museumInfo.hde_tme}
+              </p>
+              <p>{museumInfo.hdy_inf}</p>
+            </div>
+          </div>
         </div>
 
         <div className="mus_pay">
-          <p className="p_title"><i class="fa-solid fa-coins"></i> 관람료</p>
-          <p>어른 : {museumInfo.adt_fee}원</p>
-          <p>청소년 : {museumInfo.chd_fee}원</p>
-          <p>어린이 : {museumInfo.yot_fee}원</p>
+          <div className="p_title"><i class="fa-solid fa-coins"></i> 관람료</div>
+          <div className="mus_pay_set">
+            <div className="mus_pay_title">
+              <p>어른</p>
+              <p>청소년</p>
+              <p>어린이</p>
+            </div>
+            <div className="mus_pay_data">
+              <p>{museumInfo.adt_fee} 원</p>
+              <p>{museumInfo.chd_fee} 원</p>
+              <p>{museumInfo.yot_fee} 원</p>
+            </div>
+          </div>
         </div>
       </div>
       <div className="mus_book">
