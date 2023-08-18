@@ -24,6 +24,7 @@
 * axios
 * axios jsonp
 * bootstrap
+* etc...
 
 ### FONT
 
@@ -34,6 +35,10 @@
 
 * fortawesome
 
+### IMAGE
+
+* 현재 이미지 출처 [국립중앙박물관](https://www.museum.go.kr/)
+
 ## 이후 업데이트 예정
 
 * 박물관 데이터 추가 예정
@@ -41,4 +46,4 @@
 * DB서버에서 데이터 연동 예정
 * 관리자 페이지 추가(공지사항, 공연전시 표시, 사용자 관리, 박물관 정보 리스트 관리 등)
 
-> firebase 에서 hosting 합니다.
+*firebase 에서 hosting 합니다.*
