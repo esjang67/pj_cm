@@ -33,9 +33,9 @@ function MuseumDetail({ id }) {
       <h3>{museumInfo.mus_nam}</h3>
 
       <div className="mus_def">
-        <p>{museumInfo.mus_typ}</p>
-        <p>{museumInfo.new_adr}</p>
-        <p>{museumInfo.opr_tel}</p>
+        <p><i className="fa-regular fa-face-meh-blank"/> {museumInfo.mus_typ}</p>
+        <p><i className="fa-solid fa-location-dot"/> {museumInfo.new_adr}</p>
+        <p><i className="fa-solid fa-phone"/> {museumInfo.opr_tel}</p>
       </div>
       <div className="mus_ti_pa">
         <div className="mus_time">

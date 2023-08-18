@@ -114,7 +114,7 @@ function ReviewDetail() {
       let localData = JSON.parse(localStorage.getItem("Pg_CM_Rv"));
       let _localData = localData.filter((d) => String(d.id) !== String(id));
       localStorage.setItem("Pg_CM_Rv", JSON.stringify(_localData));
-      navigate(-1);
+      navigate('/review');
     }
   }
 

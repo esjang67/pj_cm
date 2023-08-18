@@ -55,6 +55,7 @@ color: #90caf9;
 }
 .Header .menuUl .menu-user {
   width: auto;
+  margin-right: 20px;
   cursor: default;
 }
 @media screen and (max-width: 768px) {

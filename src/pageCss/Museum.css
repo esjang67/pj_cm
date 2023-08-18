@@ -23,17 +23,22 @@
   text-shadow: 1px 3px 10px #42a5f5 ;
 }
 
-.Museum .MuseumDeatail > div {
-  /* border: 1px solid red */
+.Museum .MuseumDeatail .mus_def {
+  font-size: 20px;
 }
 
 .Museum .MuseumDeatail .mus_ti_pa {
   display: flex;
   margin-top: 30px;
 }
-.Museum .MuseumDeatail .mus_ti_pa > div {
+.Museum .MuseumDeatail .mus_ti_pa .mus_time {
   /* border: 1px solid red; */
-  width: 45%
+  /* border: 1px solid red; */
+  width: 55%
+}
+
+.Museum .MuseumDeatail .mus_ti_pa .mus_pay {
+  width: 35%;
 }
 
 .Museum .MuseumDeatail > div .p_title {
@@ -52,6 +57,7 @@
   
 }
 .Museum .MuseumDeatail .mus_book {
+  margin-top: 30px;
   text-align: right;
 }
 
