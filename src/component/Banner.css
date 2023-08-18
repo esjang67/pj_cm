@@ -23,10 +23,14 @@ import img_banner3 from "../img/banner/banner3.jpg"; */
 }
 .Banner .carousel .banner1{
   background: url('../img/banner/banner1.jpg') center center / contain no-repeat;
+  background-size: cover;
+
 }
 .Banner .carousel .banner2{
   background: url('../img/banner/banner2.png') center center / contain no-repeat;
+  background-size: cover;
 }
 .Banner .carousel .banner3{
   background: url('../img/banner/banner3.jpg') center center / contain no-repeat;
+  background-size: cover;
 }

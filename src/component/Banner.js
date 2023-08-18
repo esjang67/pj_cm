@@ -9,17 +9,17 @@ function Banner() {
   return (
     <Carousel className="Banner" data-bs-theme="dark">
       <Carousel.Item>
-        <img className="d-block" src={img_banner1} alt="Banner1" />
+        <img className="d-block w-100" src={img_banner1} alt="Banner1" />
         {/* <Carousel.Caption>
           <h5>First slide label</h5>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption> */}
       </Carousel.Item>
       <Carousel.Item>
-        <img className="d-block" src={img_banner2} alt="Banner2" />
+        <img className="d-block w-100" src={img_banner2} alt="Banner2" />
       </Carousel.Item>
       <Carousel.Item>
-        <img className="d-block" src={img_banner3} alt="Banner3" />
+        <img className="d-block w-100" src={img_banner3} alt="Banner3" />
       </Carousel.Item>
     </Carousel>
   );
