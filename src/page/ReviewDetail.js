@@ -13,10 +13,11 @@ function ReviewDetail() {
   const [write, setWrite] = useState({
     date: getFormettedDate(new Date()),
     museum: "", // value -> id 저장됨
-    content: "",
+    content: ""
   });
-  console.log("ReviewDetail write", write);
+  // console.log("ReviewDetail write", write);
 
+  // 
   useEffect(() => {
     if (String(id) !== "new") {
       // 로컬스토리지 조회
@@ -26,11 +27,25 @@ function ReviewDetail() {
       setWrite({
         date: getFormettedDate(new Date(localData[0].date)),
         museum: localData[0].museum,
-        content: localData[0].content,
+        content: localData[0].content
       });
     }
     // console.log('ReviewDetail write', write)
   }, [id]);
+
+  useEffect(()=> {
+    if (String(id) === "new") {
+      const combo = document.querySelector('.combo').firstChild.value;
+      console.log('ReviewDetail', combo)
+
+      setWrite({
+        date: getFormettedDate(new Date()),
+        museum: combo,
+        content: ''
+      });
+    }
+
+  }, [id])
 
   function changeDateHandler(e) {
     setWrite({

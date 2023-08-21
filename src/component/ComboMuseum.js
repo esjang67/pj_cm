@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useSelector } from "react-redux";
 
 function ComboMuseum({ selId, onSubmit }) {
@@ -11,9 +12,15 @@ function ComboMuseum({ selId, onSubmit }) {
     comboMuseumAll.push(`${element.id}:${element.mus_nam}`);
   });
 
+  useEffect(()=> {
+    const combo = document.querySelector('.combo').firstChild.value;
+    console.log('ComboMuseum', combo)
+    selId = combo;
+  })
+
   return (
     <div className="ComboMuseum">
-      <select onChange={onSubmit} value={selId}>
+      <select className="combo" onChange={onSubmit} value={selId}>
         {comboMuseumAll.map((Mdata) => {
           const cData = Mdata.split(":");
           return (
